@@ -1,12 +1,16 @@
 {
   "name": "serverless-cors-test",
-  "plugins": [
-    "serverless-cors-plugin",
-    "serverless-client-s3"
-  ],
   "custom" : {
     "client": {
         "bucketName": "sandbox.sls.test.cors"
+    },
+    "cors": {
+      "allowOrigin": "*",
+      "allowHeaders": ["Content-Type", "X-Amz-Date", "Authorization", "X-Api-Key"]
     }
-  }
+  },
+  "plugins": [
+    "serverless-cors-plugin",
+    "serverless-client-s3"
+  ]
 }
