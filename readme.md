@@ -3,9 +3,15 @@
 This is a sample project that uses the [serverless
 framework](http://serverless.com/) to accept an inbound post.
 
-The endpoint works from http://test-cors.org/ with application/json.
+The CORS endpoint works with application/json which you can test here:
 
-I would like for it to accept raw form input from a CORS resource
+http://test-cors.org/
+
+Live Endpoint (at the time of this writing): https://lqua9t0r4g.execute-api.us-east-1.amazonaws.com/dev/testPost
+
+I would like for it to accept raw form input and parse out an "email" input.
+
+Returning the parsed input in the function response would be fine for now.
 
 # Installing
 
